@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Creates a grid with three columns, each taking up an equal fraction of the available space */
+    gap: 10px; /* Specifies the gap (space) between grid items */
+    padding: 20px; /* Adds padding around the grid */
+  }
+  
+  .image-gallery img {
+    width: 100%; /* Ensures the images fill their grid cells horizontally */
+    height: auto; /* Maintains the aspect ratio of the images */
+    border-radius: 8px; /* Adds rounded corners to the images */
+  }
+  
+  /* Center the image within its grid cell */
+  .image-gallery img {
+    display: block; /* Makes the images block-level elements */
+    margin: 0 auto; /* Centers the images horizontally within their grid cells */
+  }
+  
